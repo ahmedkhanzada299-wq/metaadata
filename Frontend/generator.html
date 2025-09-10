@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Metaa Data - Data Generator</title>
+  
+      <!-- Canonical URL -->
+    <link rel="canonical" href="https://metaadata.com/generator.html">
+  
+  <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Metaa Data - Free data generator for developers, testers, and data enthusiasts. Generate random test data instantly." />
+  <meta name="keywords" content="data generator, sample data, fake data, test data, random data, metaadata" />
+  <meta name="author" content="Metaa Data" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Metaa Data - Data Generator" />
+  <meta property="og:description" content="Generate free sample and test data instantly for your projects with Metaa Data." />
+  <meta property="og:image" content="https://metaadata.com/logo_metaadata.png" />
+  <meta property="og:url" content="https://metaadata.com/generator.html" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Twitter Card (better previews on Twitter/X) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Metaa Data - Data Generator" />
+  <meta name="twitter:description" content="Generate random and sample test data instantly with Metaa Data." />
+  <meta name="twitter:image" content="https://metaadata.com/logo_metaadata.png" />
+  
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+  <body>
+    <div class="container-fluid gradient-bg">
+        <!-- Header Section -->
+        <nav class="navbar navbar-expand-lg navbar-light .gradient-bg">
+        <a class="navbar-brand" href="#">
+                <img src="logo_metaadata.png" alt="Logo" class="logo">
+          <!-- Replace with your logo path -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="generator.html">Generate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About_us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="Privacy_Policy.html">Privacy Policy</a>
+            </li>
+                                    <li class="nav-item">
+                        <a class="nav-link" href="using.html">How to use?</a>
+                    </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Country Flag Section -->
+      <!-- Country Flag Section -->
+      <section class="country-flags-section text-center">
+        <h2>Select a Country to Generate Random Data</h2>
+        <div class="flags-container">
+          <div class="flag-item">
+            <a id="1" href="#" onclick="scrollDown()">
+            <img src="https://flagcdn.com/w80/ar.png" alt="Argentina Flag"
+            /></a>
+            <p>Argentina</p>
+          </div>
+          <div class="flag-item">
+            <a id="2" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/au.png" alt="Australia Flag"
+            /></a>
+            <p>Australia</p>
+          </div>
+          <div class="flag-item">
+            <a id="3" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/bd.png" alt="Bangladesh Flag"
+            /></a>
+            <p>Bangladesh</p>
+          </div>
+          <div class="flag-item">
+            <a  id="4" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/br.png" alt="Brazil Flag"
+            /></a>
+            <p>Brazil</p>
+          </div>
+          <div class="flag-item">
+            <a id="5" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/ca.png" alt="Canada Flag"
+            /></a>
+            <p>Canada</p>
+          </div>
+          <div class="flag-item">
+            <a  id="6" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/cn.png" alt="China Flag"
+            /></a>
+            <p>China</p>
+          </div>
+          <div class="flag-item">
+            <a id="7" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/eg.png" alt="Egypt Flag"
+            /></a>
+            <p>Egypt</p>
+          </div>
+          <div class="flag-item">
+            <a  id="8" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/fr.png" alt="France Flag"
+            /></a>
+            <p>France</p>
+          </div>
+          <div class="flag-item">
+            <a  id="9" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/de.png" alt="Germany Flag"
+            /></a>
+            <p>Germany</p>
+          </div>
+          <div class="flag-item">
+            <a  id="10" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/in.png" alt="India Flag"
+            /></a>
+            <p>India</p>
+          </div>
+          <div class="flag-item">
+            <a  id="11" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/it.png" alt="Italy Flag"
+            /></a>
+            <p>Italy</p>
+          </div>
+          <div class="flag-item">
+            <a  id="12" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/jp.png" alt="Japan Flag"
+            /></a>
+            <p>Japan</p>
+          </div>
+          <div class="flag-item">
+            <a  id="13" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/kr.png" alt="South Korea Flag"
+            /></a>
+            <p>South Korea</p>
+          </div>
+          <div class="flag-item">
+            <a  id="14" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/mx.png" alt="Mexico Flag"
+            /></a>
+            <p>Mexico</p>
+          </div>
+          <div class="flag-item">
+            <a  id="15" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/ng.png" alt="Nigeria Flag"
+            /></a>
+            <p>Nigeria</p>
+          </div>
+          <div class="flag-item">
+            <a  id="16" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/ru.png" alt="Russia Flag"
+            /></a>
+            <p>Russia</p>
+          </div>
+          <div class="flag-item">
+            <a  id="17" href="#" onclick="scrollDown()">
+              <img
+                src="https://flagcdn.com/w80/sa.png"
+                alt="Saudi Arabia Flag"
+            /></a>
+            <p>Saudi Arabia</p>
+          </div>
+          <div class="flag-item">
+            <a  id="18" href="#" onclick="scrollDown()">
+              <img
+                src="https://flagcdn.com/w80/gb.png"
+                alt="United Kingdom Flag"
+            /></a>
+            <p>United Kingdom</p>
+          </div>
+          <div class="flag-item">
+            <a  id="19" href="#" onclick="scrollDown()">
+              <img
+                src="https://flagcdn.com/w80/us.png"
+                alt="United States Flag"
+            /></a>
+            <p>United States</p>
+          </div>
+          <div class="flag-item">
+            <a  id="20" href="#" onclick="scrollDown()">
+              <img src="https://flagcdn.com/w80/vn.png" alt="Vietnam Flag"
+            /></a>
+            <p>Vietnam</p>
+          </div>
+        </div>
+      </section>
+      <!-- Table Section -->
+      
+      <section id="down-section">
+        <div class="container mb-4">
+        <div class="card">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <h5 class="mb-0">Personal Details</h5>
+            <button class="btn btn-sm btn-primary refresh-button rb1">
+              Refresh
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <!-- Add responsive wrapper -->
+            <table class="table table-bordered table-hover mb-0">
+                <tbody>
+                  <tr>
+                    <th>Country</th>
+                    <td id="country"></td>
+                    <th>Name</th>
+                    <td id="name"></td>
+                  </tr>
+                  <tr>
+                    <th>Address</th>
+                    <td id="address"></td>
+                    <th>Postcode</th>
+                    <td id="postcode"></td>
+                  </tr>
+                  <tr>
+                    <th>City</th>
+                    <td id="city"></td>
+                    <th>Date Of Birth</th>
+                    <td id="dob"></td>
+                  </tr>
+                  <tr>
+                    <th>Gender</th>
+                    <td id="gender"></td>
+                    <th>Phone</th>
+                    <td id="phone"></td>
+                  </tr>
+                  <tr>
+                    <th>Mother's Maiden Name</th>
+                    <td id="motherMaidenName"></td>
+                    <th>Email</th>
+                    <td id="email"></td>
+                  </tr>
+                  <tr>
+                    <th>Ethnicity</th>
+                    <td id="ethnicity"></td>
+                    <th>Zodiac Sign</th>
+                    <td id="zodiacSign"></td>
+                  </tr>
+                  <tr>
+                    <th>Age (Years)</th>
+                    <td id="age"></td>
+                    <th>Height</th>
+                    <td id="height"></td>
+                  </tr>
+                  <tr>
+                    <th>Weight</th>
+                    <td id="weight"></td>
+                    <th>Eye Color</th>
+                    <td id="eyeColor"></td>
+                  </tr>
+                  <tr>
+                    <th>Hair Color</th>
+                    <td id="hairColor"></td>
+                    <td colspan="2"></td>
+                  </tr>
+                </tbody>
+              </table>          
+        <!-- Financial Details -->
+        <div class="card mb-4 mt-4">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <h5 class="mb-0">Financial Details</h5>
+            <button  class="btn btn-sm btn-primary refresh-button rb2">
+              Refresh
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <!-- Add responsive wrapper -->
+              <table class="table table-bordered table-hover mb-0">
+                <tbody>
+                  <tr>
+                    <th>Credit Card Type</th>
+                    <td id="CreditCardType" >
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                        alt="MasterCard"
+                        class="card-logo"
+                      />
+                      
+                    </td>
+                    <th>Credit Card Number</th>
+                    <td id="CreditCardNumber"></td>
+                  </tr>
+                  <tr>
+                    <th>Credit Card Expiry</th>
+                    <td id="CreditCardExpiry"></td>
+                    <th>Credit Card CVV2</th>
+                    <td id="CreditCardCVV2"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internet -->
+        <div class="card mb-4">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <h5 class="mb-0">Internet</h5>
+            <button class="btn btn-sm btn-primary refresh-button rb3">
+              Refresh
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <!-- Add responsive wrapper -->
+              <table class="table table-bordered table-hover mb-0">
+                <tbody>
+                  <tr>
+                    <th>User Name</th>
+                    <td id="UserName"></td>
+                    <th>Password</th>
+                    <td id="Password"></td>
+                  </tr>
+                  <tr>
+                    <th>IPv4 Address</th>
+                    <td id="IPv4Address"></td>
+                    <th>IPv6 Address</th>
+                    <td id="IPv6Address"></td>
+                  </tr>
+                  <tr>
+                    <th>User Agent</th>
+                    <td colspan="3" id="UserAgent">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="card mb-4">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <h5 class="mb-0">Education</h5>
+            <button class="btn btn-sm btn-primary refresh-button rb4">
+              Refresh
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <!-- Add responsive wrapper -->
+              <table class="table table-bordered table-hover mb-0">
+                <tbody>
+                  <tr>
+                    <th>Qualification</th>
+                    <td id="Qualification" ></td>
+                    <th>Institution</th>
+                    <td id="Institution"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Employment Details -->
+        <div class="card mb-4">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <h5 class="mb-0">Employment Details</h5>
+            <button class="btn btn-sm btn-primary refresh-button rb5">
+              Refresh
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <!-- Add responsive wrapper -->
+              <table class="table table-bordered table-hover mb-0">
+                <tbody>
+                  <tr>
+                    <th>Company Name</th>
+                    <td id="CompanyName"></td>
+                    <th>Salary</th>
+                    <td id="Salary"></td>
+                  </tr>
+                  <tr>
+                    <th>Company Address</th>
+                    <td id="CompanyAddress"></td>
+                    <th>Job Title</th>
+                    <td id="JobTitle"></td>
+                  </tr>
+                  <tr>
+                    <th>Company Phone</th>
+                    <td id="CompanyPhone"></td>
+                    <th >Company Email</th>
+                    <td id="CompanyEmail"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <section class="fake-sections">
+          <div class="hero-content">
+            <img
+              src="rb_74366.png"
+              alt="Credit Card Image"
+              class="credit-card-image"
+            />
+          </div>
+        </section>
+        <!-- Vehicle Details -->
+        <div class="card mb-4">
+          <div
+            class="card-header d-flex justify-content-between align-items-center"
+          >
+            <h5 class="mb-0">Vehicle Details</h5>
+            <button class="btn btn-sm btn-primary refresh-button rb6">
+              Refresh
+            </button>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <!-- Add responsive wrapper -->
+              <table class="table table-bordered table-hover mb-0">
+                <tbody>
+                  <tr>
+                    <th>Vehicle</th>
+                    <td id="VehicleName"></td>
+                    <th >License Plate</th>
+                    <td id="LicensePlate"></td>
+                  </tr>
+                  <tr>
+                    <th>VIN</th>
+                    <td id="VIN"></td>
+                    <th>Color</th>
+                    <td id="Color"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+      <!-- Footer Section -->
+<footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <h5>Copyright © Metaa data - All Rights Reserved 2025</h5>
+        </div>
+        <div class="col-md-12 mb-3">
+          <a href="Privacy_Policy.html" class="text-white mx-3">Privacy Policy</a>
+          <a href="Terms_service.html" class="text-white mx-3">Terms Of Service</a>
+        </div>
+        <div class="col-md-12 mb-3">
+        <a href="mailto:metaadata1@gmail.com" class="text-white">metaadata1@gmail.com</a>
+        </div>
+        <div class="col-md-12 mb-3">
+          <p>By using our site, you agree to our <a href="Terms_&_Conditions.html" class="text-white">Terms & Conditions</a>.</p>
+        </div>
+        <div class="col-md-12 mb-3">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener" class="mx-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px; height: 30px;">
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener" class="mx-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 30px; height: 30px;">
+          </a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="mx-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 30px; height: 30px;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>  
+    </div>
+    <!-- End of container-fluid -->
+  </body>
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./personalDetails.js"></script>  
+  <script src="./financialDetails.js"></script>  
+  <script src="./EmploymentDetails.js"></script>  
+  <script src="./InternetDetails.js"></script>  
+  <script src="./EducationDetails.js"></script>  
+  <script src="./VehicleDetails.js"></script>  
+  <script src="./copy-utils.js"></script>
+  <script src="./dataInitializer.js"></script>
+  
+  <!-- Debug script to directly add copy icons -->
+  <script>
+
+
+    // Function to apply mobile-friendly table layout
+function optimizeTablesForMobile() {
+  const tables = document.querySelectorAll('.table');
+  
+  if (window.innerWidth <= 768) {
+    // Add mobile class to all tables
+    tables.forEach(table => {
+      if (!table.classList.contains('table-mobile-stack')) {
+        table.classList.add('table-mobile-stack');
+      }
+    });
+  } else {
+    // Remove mobile class when on larger screens
+    tables.forEach(table => {
+      table.classList.remove('table-mobile-stack');
+    });
+  }
+}
+
+// Run on load and resize
+window.addEventListener('load', function() {
+  optimizeTablesForMobile();
+  
+  // Reinitialize copy icons after table transformation
+  setTimeout(function() {
+    if (typeof addCopyIconsToTables === 'function') {
+      addCopyIconsToTables();
+    }
+  }, 500);
+});
+
+window.addEventListener('resize', optimizeTablesForMobile);
+    // Wait for everything to be fully loaded
+    window.addEventListener('load', function() {
+      console.log("Window fully loaded - direct script executing");
+      
+      // Verify copy-utils.js was loaded
+      if (typeof addCopyIconsToTables !== 'function') {
+        console.error("Copy functionality not loaded! Adding emergency fallback.");
+        
+        // Fallback implementation
+        function addEmergencyCopyIcons() {
+          console.log("Adding emergency copy icons");
+          const tables = document.querySelectorAll('.table');
+          
+          tables.forEach(table => {
+            const cells = table.querySelectorAll('td');
+            cells.forEach(cell => {
+              if (cell.querySelector('.emergency-copy-icon') || !cell.textContent.trim()) {
+                return;
+              }
+              
+              // Ensure position relative for absolute positioning
+              cell.style.position = 'relative';
+              cell.style.paddingRight = '35px';
+              
+              const icon = document.createElement('i');
+              icon.className = 'fas fa-copy emergency-copy-icon';
+              icon.style.position = 'absolute';
+              icon.style.right = '10px';
+              icon.style.top = '50%';
+              icon.style.transform = 'translateY(-50%)';
+              icon.style.color = '#6c757d';
+              icon.style.fontSize = '16px';
+              icon.style.cursor = 'pointer';
+              icon.style.opacity = '0.7';
+              icon.style.transition = 'all 0.3s ease';
+              icon.style.zIndex = '5';
+              icon.style.width = '24px';
+              icon.style.height = '24px';
+              icon.style.display = 'flex';
+              icon.style.alignItems = 'center';
+              icon.style.justifyContent = 'center';
+              icon.style.borderRadius = '50%';
+              icon.style.backgroundColor = 'rgba(240, 242, 245, 0.5)';
+              icon.style.border = '1px solid rgba(0, 0, 0, 0.05)';
+              
+              icon.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const text = cell.textContent.trim();
+                navigator.clipboard.writeText(text)
+                  .then(() => {
+                    icon.className = 'fas fa-check emergency-copy-icon';
+                    icon.style.color = '#28a745';
+                    icon.style.opacity = '1';
+                    icon.style.backgroundColor = 'rgba(40, 167, 69, 0.1)';
+                    
+                    // Create beautiful notification
+                    const notification = document.createElement('div');
+                    notification.textContent = 'Copied: ' + text;
+                    notification.style.position = 'fixed';
+                    notification.style.bottom = '20px';
+                    notification.style.right = '20px';
+                    notification.style.background = 'linear-gradient(135deg, #2575fc 0%, #6a11cb 100%)';
+                    notification.style.color = 'white';
+                    notification.style.padding = '12px 24px';
+                    notification.style.borderRadius = '8px';
+                    notification.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.2)';
+                    notification.style.zIndex = '9999';
+                    notification.style.minWidth = '200px';
+                    notification.style.textAlign = 'center';
+                    notification.style.borderLeft = '4px solid #11cdef';
+                    notification.style.transform = 'translateY(0)';
+                    notification.style.fontWeight = '500';
+                    
+                    // Add the checkmark to the notification
+                    const beforeText = document.createTextNode('✓ ');
+                    notification.insertBefore(beforeText, notification.firstChild);
+                    
+                    document.body.appendChild(notification);
+                    
+                    // Add an animation to notification
+                    notification.animate(
+                      [
+                        { transform: 'translateY(100px)', opacity: 0 },
+                        { transform: 'translateY(0)', opacity: 1 }
+                      ],
+                      {
+                        duration: 400,
+                        easing: 'cubic-bezier(0.68, -0.55, 0.27, 1.55)'
+                      }
+                    );
+                    
+                    // Remove after delay
+                    setTimeout(() => {
+                      notification.animate(
+                        [
+                          { transform: 'translateY(0)', opacity: 1 },
+                          { transform: 'translateY(100px)', opacity: 0 }
+                        ],
+                        {
+                          duration: 400,
+                          easing: 'cubic-bezier(0.68, -0.55, 0.27, 1.55)'
+                        }
+                      ).onfinish = () => {
+                        document.body.removeChild(notification);
+                      };
+                      
+                      icon.className = 'fas fa-copy emergency-copy-icon';
+                      icon.style.color = '#6c757d';
+                      icon.style.opacity = '0.7';
+                      icon.style.backgroundColor = 'rgba(240, 242, 245, 0.5)';
+                    }, 2500);
+                  });
+              });
+              
+              cell.appendChild(icon);
+            });
+          });
+        }
+        
+        // Try multiple times
+        setTimeout(addEmergencyCopyIcons, 1000);
+        setTimeout(addEmergencyCopyIcons, 2000);
+        setTimeout(addEmergencyCopyIcons, 3000);
+      } else {
+        console.log("Copy icons function available, triggering it directly");
+        setTimeout(addCopyIconsToTables, 1000);
+        setTimeout(addCopyIconsToTables, 2000);
+      }
+    });
+
+      function scrollDown() {
+    document.getElementById("down-section").scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+  </script>
+</html>

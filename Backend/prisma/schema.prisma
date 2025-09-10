@@ -1,0 +1,99 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+    binaryTargets = ["native", "windows", "debian-openssl-3.0.x"]
+
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+model Countries {
+  CountryID   Int                 @id @default(autoincrement())
+  CountryName String              @unique
+  PersonalDetails PersonalDetails[]
+  FinancialDetails FinancialDetails[]
+  InternetDetails InternetDetails[]
+  EducationDetails EducationDetails[]
+  EmploymentDetails EmploymentDetails[]
+  VehicleDetails VehicleDetails[]
+}
+
+model PersonalDetails {
+  ID               Int      @id @default(autoincrement())
+  Name             String?
+  Address          String?
+  Postcode         String?
+  City             String?
+  DateOfBirth      DateTime?
+  Gender           String?
+  Phone            String?  @unique
+  MothersMaidenName String?
+  Email            String?  @unique
+  Ethnicity        String?
+  ZodiacSign       String?
+  Age              Int?
+  Height           Float?
+  Weight           Float?
+  EyeColor         String?
+  HairColor        String?
+  CountryID        Int
+  Country          Countries @relation(fields: [CountryID], references: [CountryID])
+}
+
+model FinancialDetails {
+  ID                Int       @id @default(autoincrement())
+  CreditCardType    String?
+  CreditCardNumber  String?   @unique
+  CreditCardExpiry  String?
+  CreditCardCVV2    Int?
+  CountryID         Int
+  Country           Countries @relation(fields: [CountryID], references: [CountryID])
+}
+
+model InternetDetails {
+  ID           Int       @id @default(autoincrement())
+  UserName     String?   @unique
+  Password     String?
+  IPv4Address  String?   @unique
+  IPv6Address  String?   @unique
+  UserAgent    String?
+  CountryID    Int
+  Country      Countries @relation(fields: [CountryID], references: [CountryID])
+}
+
+model EducationDetails {
+  ID             Int       @id @default(autoincrement())
+  Qualification  String?
+  Institution    String?
+  CountryID      Int
+  Country        Countries @relation(fields: [CountryID], references: [CountryID])
+}
+
+model EmploymentDetails {
+  ID            Int       @id @default(autoincrement())
+  CompanyName   String?
+  Salary        String?
+  CompanyAddress String?
+  JobTitle      String?
+  CompanyPhone  String?
+  CompanyEmail  String?   @unique
+  CountryID     Int
+  Country       Countries @relation(fields: [CountryID], references: [CountryID])
+}
+
+model VehicleDetails {
+  ID           Int       @id @default(autoincrement())
+  VehicleName  String?
+  LicensePlate String?   @unique
+  VIN          String?   @unique
+  Color        String?
+  CountryID    Int
+  Country      Countries @relation(fields: [CountryID], references: [CountryID])
+}
