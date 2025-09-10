@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // Serve Frontend folder as static
-// app.use(express.static(path.join(__dirname, "../Frontend")));
+app.use(express.static(path.join(__dirname, "../Frontend")));
 
 // app.get("/index.html", (req, res) => {
 //   res.redirect(301, "/");
