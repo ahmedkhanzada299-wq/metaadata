@@ -4,53 +4,48 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://metaadata.com/</loc>
-  <lastmod>2025-08-29T17:59:34+00:00</lastmod>
-  <priority>1.0</priority>
-</url>
-<url>
-  <loc>https://metaadata.com/index.html</loc>
-  <lastmod>2025-08-29T17:59:34+00:00</lastmod>
-  <priority>1.0</priority>
+  <lastmod>2025-09-19T18:20:58+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://metaadata.com/generator.html</loc>
-  <lastmod>2025-08-29T17:59:34+00:00</lastmod>
-  <priority>1.0</priority>
+  <lastmod>2025-09-19T18:20:58+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://metaadata.com/About_us.html</loc>
-  <lastmod>2025-08-29T17:59:34+00:00</lastmod>
-  <priority>0.8</priority>
+  <lastmod>2025-09-19T18:20:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://metaadata.com/contact_us.html</loc>
-  <lastmod>2025-08-29T17:59:34+00:00</lastmod>
-  <priority>0.8</priority>
+  <lastmod>2025-09-19T18:20:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://metaadata.com/Privacy_Policy.html</loc>
-  <lastmod>2025-08-29T17:59:34+00:00</lastmod>
-  <priority>0.8</priority>
+  <lastmod>2025-09-19T18:20:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://metaadata.com/using.html</loc>
-  <lastmod>2025-08-29T17:59:34+00:00</lastmod>
-  <priority>0.8</priority>
+  <lastmod>2025-09-19T18:20:59+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://metaadata.com/Terms_service.html</loc>
-  <lastmod>2025-08-29T17:59:34+00:00</lastmod>
-  <priority>0.8</priority>
+  <lastmod>2025-09-19T18:20:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://metaadata.com/Terms_&amp;_Conditions.html</loc>
-  <lastmod>2025-08-29T17:59:34+00:00</lastmod>
-  <priority>0.8</priority>
+  <lastmod>2025-09-19T18:20:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
-
 
 </urlset>
